@@ -1,0 +1,11 @@
+{
+  "name": "linktree_new",
+  "version": "1.0.0",
+  "description": "This is the codebase for my linktre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Susmit Singh",
+  "license": "ISC"
+}

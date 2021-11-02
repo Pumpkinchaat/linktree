@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "Github",
+        "imageName" : "github",
+        "link" : "https://github.com/Pumpkinchaat"
+    },
+    {
+        "name" : "LinkedIn",
+        "imageName" : "linkedin",
+        "link" : "https://www.linkedin.com/in/susmit-singh-5a40931b5/"
+    },
+    {
+        "name" : "Instagram",
+        "imageName" : "instagram",
+        "link" : "https://www.instagram.com/susmit25_/"
+    }
+]
