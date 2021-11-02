@@ -1,0 +1,18 @@
+<%- layout("/partials/boilerplate.ejs") %> 
+
+
+<div class="header">
+    <div class="profile-picture"></div>
+    <div class="title">Susmit Singh</div>
+</div>
+<div class="main-container">
+        <% for (let link of data){ %>
+            <a href="<%= link.link %>">
+                <div class="tile">
+                    <% if(!link.imageName) link.imageName = "hyperlink" %> 
+                    <div class="picture" style="background: center/cover url(/pics/logos/<%= link.imageName %>.png);"></div>
+                    <div class="title"><%= link.name %></div>
+            </div>
+        </a>
+    <% } %> 
+</div>

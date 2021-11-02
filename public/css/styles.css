@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --background: #222831;
+    --dark-shadow: #222831c7;
+    --background-dark: #111418;
+    --light_grey: #393E46;
+    --blue: #00ADB5;
+    --white: #EEEEEE;
+}
+
+* , *::after , *::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.8) 20%, rgba(0,0,0,0.5) 90%, rgba(0,0,0,0.2) 100%) ,no-repeat center/cover url("/pics/linktree_background.jpg");
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.container .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.header .error-picture {
+    height: 200px;
+    width: 200px;
+    background: no-repeat center/cover url("/pics/error.png");
+}
+
+.header .profile-picture {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: no-repeat center/cover url("/pics/profpic.jpg");
+    box-shadow: 0px 0px 10px var(--dark-shadow);
+}
+
+.header .title {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.main-container .tile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 10px;
+    letter-spacing: 1px;
+    border: 2px solid var(--blue);
+    color: var(--white);
+    background-color: var(--background);
+    border-radius: 5px;
+    margin: 5px 0px;
+    box-shadow: 0px 0px 5px var(--blue);
+    transition: all 100ms linear;
+}
+
+.main-container a {
+    text-decoration: none;
+}
+
+.main-container .tile:hover {
+    transform: scale(1.01);
+    background-color: var(--background-dark);
+}
+
+.main-container .picture {
+    position: absolute;
+    height: 1.75rem;
+    width: 1.75rem;    
+}
+
+.main-container .tile .title {
+    padding-left: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.footer {
+    text-transform: capitalize;
+    width:100%;
+    padding: 10px 15px;
+    color: var(--blue);
+}
+
+@media (min-width: 500px) {
+    .container {
+        width: 500px;
+        margin: 0px auto;
+    }
+}
